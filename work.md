@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: work
 title: Work
 permalink: /work/
 ---
-
-My work!!
