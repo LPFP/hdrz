@@ -17,12 +17,12 @@ title: Hadar Zas
 email: my@mail.com
 description: this is the description of my web site!
 baseurl: /hdrz # the subpath of your site, e.g. /blog
-url: https://hdrz.fr # the base hostname & protocol for your site, e.g. http://example.com
+url: https://lpfp.github.io # the base hostname & protocol for your site, e.g. http://example.com
 repository: LPFP/hdrz
 github_username:  hadarzas
 
 # Build settings
-exclude: [vendor]
+# exclude: [vendor]
 
 # Build settings
 markdown: kramdown
