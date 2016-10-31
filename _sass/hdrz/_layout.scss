@@ -1,10 +1,12 @@
+
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 0 solid $hdrz-border;
+  border-bottom: 5px solid $hdrz-border;
   min-height: 56px;
+  background-color: $background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -16,11 +18,13 @@
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  text-align: center;
+  float: none;
+
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $brand-color;
   }
 }
 
@@ -92,9 +96,17 @@
 /**
  * Site footer
  */
+
+.foot {
+  position:absolute;
+  bottom:0px;
+  width: 100%;
+}
+
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  border-top: 5px solid $hdrz-border;
+  background-color: $background-color;
+  padding: $spacing-unit /2 0;
 }
 
 .footer-heading {
@@ -102,61 +114,22 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
+.footer-text {
+  font-size: 14px;
+  font-weight: 300;
+	color: $hdrz-txtbck;
+  line-height: 22px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  text-align: center;
+  float: none;
 
-.footer-col-wrapper {
-  font-size: 15px;
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  a,
+  a:hover,
+  a:visited {
+    color: $brand-color;
   }
 }
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-
 
 
 /**
@@ -164,6 +137,7 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  background-color: $background-color;
 }
 
 .page-heading {

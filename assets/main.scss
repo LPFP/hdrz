@@ -12,21 +12,24 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #2A2A2A;
-$background-color: #fdfdfd;
-$brand-color:      #BD68C2;
+$text-color:       #4B4A4A;
+$background-color: #DBDBDB;
+$brand-color:      #FB2EFF;
 
-$grey-color:       #828282;
+$grey-color:       #9DEDDF;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$hdrz-border:        lighten($background-color, 5%);
+$hdrz-txtbck:        darken($background-color, 25%);
+
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
+// hdrz also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
